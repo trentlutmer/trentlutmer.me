@@ -1,342 +1,323 @@
 /*===== Trent Lutmer - Designer ===== */
-/*===== Version 7.1 ===== */
-/*===== 2017 Copyright of Trent Lutmer. All rights reserved. ===== */
-/*===== Last updated: 28 Oct 2017 ===== */
+/*===== Version 8.0.0 ===== */
+/*===== 2018 Copyright of Trent Lutmer. All rights reserved. ===== */
+/*===== Last updated: 1 Jan 2018 ===== */
 
 * {
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: rgba(58, 62, 63, .03);
-    color: rgba(58, 62, 63, 1);
-    font-size: 1rem;
-    margin: 0;
-}
-
-/*===== Typography ===== */
-h1, h3, h2, h5 {
-    margin: 0;
-    letter-spacing: .10rem;
-}
-
-h1 a, h2 a, h4 a {
-    color: rgba(58, 62, 63, 1);
-}
-
-h1 a:hover, h4 a:hover {
-    background: cyan;
-    transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h5 {
-    font-size: 1rem;
-    letter-spacing: .12rem;
-    text-transform: uppercase;
-}
-
-h5 a {
-    text-decoration: none;
-    color: rgba(58, 62, 63, 1);
-}
-
-p {
-    padding: 1rem 0;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-p a{
-    color: rgba(58, 62, 63, 1);
-}
-
-ul {
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.social {
-    padding: 5rem 1rem;
-    font-size: .75rem;
-}
-
-.social li {
-    display: inline;
-    padding: 0 1rem;
-}
-
-.social li a {
-    color: rgba(58, 62, 63, 1);
-    text-decoration: none;
-    list-style-type: none;
-    letter-spacing: .12rem;
-}
-
-.bold {
-    font-weight: 900;
-}
-
-
-#space {
-    margin-left: 2rem;
-}
-
-.underline {
-   text-decoration: none; 
-   position: relative; 
- } 
-
-.underline:hover:after   {
-    background-color: rgba(0,255,255, 1);
-    bottom: 8px;
-    transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
- }
-
-.underline:after {
-    position: absolute;
-    height: 8px;
-    margin: 0 auto;
-    content: '';
-    left: 0;
-    right: 0;
-    width: 60%;
-    color: #000;
-    background-color: rgba(0,255,255, .50);
-    left: 0;
-    bottom: 4px;
-    transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    z-index: -1;/* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
-}
-
-.bg-unskew {
-    width: 60%;
-    -webkit-transform: skew(0deg, 10deg);
-    transform: skew(0deg, 10deg);
-}
-
-.image {
-    width: 50%;
-    margin: 8rem auto 3rem auto;
-}
-
-img {
-    border-radius: 3px;
-    max-width: 100%;
-    display: block;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.25);
-}
-
-.project {
-    margin: 3rem 0;
-}
-
-svg {
-    position: absolute;
-    margin-top: 320px;
-    width: 100%;
-    z-index: 10;
-    height: 38rem;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(16, 30, 66, 1);
 }
 
 /*===== Header, Sections, Footer ===== */
-header, footer {
-    grid-column: 1/3;
+
+footer {
+    text-align: center;
+    margin: 4rem 0 0 0;
 }
 
-header, section, footer: {
-    max-width: 1200px;
+footer ul {
+    margin: 0 0 2rem 0;
 }
 
-header {
-    top: 0;
-    position: fixed;
-    z-index: 500;
-    width: 100%;
-    padding: 1rem 2rem;
-    mix-blend-mode: hard-light;
-    background-color: rgba(255, 255, 255, .4);
+/*===== Paragraph and Typography ===== */
+h1 {
+    line-height: 1.2rem;
+    padding: 1rem 0;
+    margin: 0   ;
+    font-weight: 700;
 }
 
-header h2 a:link {
+h3 {
+    margin: .25rem 0
+}
+
+
+p {
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 1rem 0 3rem 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: rgb(16, 30, 66);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
     text-decoration: none;
 }
 
-section {
-
-    grid-column: 1/3;
-    border-radius: 3px;
-    padding-bottom: 3rem;
+a:hover {
+    color: rgb(31, 62, 142);
 }
 
-.grid-home {
+sup {
+    font-size: .5rem;
+    opacity: .5;
+    margin-left: .5rem;
+}
+
+sup:hover {
+    text-decoration: none;
+}
+
+.contain, .grid, .mountains{
+    max-width: 800px;
+    margin: 2rem;
+}
+
+.grid {
     display: grid;
-    max-width: 1200px;
-    margin: 0 auto;
-    grid-template-columns: repeat (3, 1fr);
-    grid-gap: 2rem;
-    padding-top: 16rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2rem 4rem;
 }
 
-.grid-page {
-    max-width: 1200px;
-    margin: 0 auto;
+.grid-content {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2rem 4rem;
+    max-width: 800px;
+    margin: 2rem;
 }
 
-.grid-illo {
-    display: grid;
-    max-width: 1200px;
+.border {
+    width: 100%;
+    border-top: .5rem solid #2b51b5;
+    border-bottom: .5rem solid #101e42;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: .5rem 100%;
+    -moz-background-size: .5rem 100%;
+    background-size: .5rem 100%;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+    background-image: -webkit-linear-gradient(top, #2b51b5 0%, #101e42 100%), -webkit-linear-gradient(top, #2b51b5 0%, #101e42 100%);
+    background-image: -moz-linear-gradient(top, #2b51b5 0%, #101e42 100%), -moz-linear-gradient(top, #2b51b5 0%, #101e42 100%);
+    background-image: -o-linear-gradient(top, #2b51b5 0%, #101e42 100%), -o-linear-gradient(top, #2b51b5 0%, #101e42 100%);
+    background-image: linear-gradient(to bottom, #2b51b5 0%, #101e42 100%), linear-gradient(to bottom, #2b51b5 0%, #101e42 100%);
+}
+
+.mountains {
+    background-size: cover;
+    height: 7rem;
+    display: block;
+    width: 85%;
+    background-repeat: no-repeat;
+    background-image: url("../images/mountains.svg");
+    background-position: center;
+    margin: 3rem auto;
+}
+
+.image {
+    background-size: cover;
+    height: 12rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
 }
 
-.grid-home, .cards {
-    margin: 0 auto;
-    transition: all .3s ease-in-out;
-    z-index: 20;
+.image2 {
+    background-size: cover;
+    height: 19rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 3rem auto;
+}    
+
+.image3 {
+    background-size: cover;
+    height: 32rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 3rem auto;
+}   
+
+.page-title {
+    margin: 3rem 0 2rem 0;
 }
 
-.grid-home .cards:hover {
-    transform: scale(1.1); 
+.page-title h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
 }
 
-.grid-illo, .cards {
-    margin: 0 auto;
-    transition: all .3s ease-in-out;
+.resume li {
+    margin: 0 0 2rem 0;
 }
 
-.grid-illo .cards:hover {
-    transform: scale(1.1); 
+.resume .role {
+    margin: 0.25rem 0;
 }
 
-.section {
-    max-width: 50%;
-    text-align: left;
-    margin: 0 auto;     
+.resume .date {
+    font-weight: 400;
+    margin-left: .75rem;
 }
 
-.cards {
-    padding: 0 2rem;
+.resume .company {
+    font-weight: 700;
+    font-style: italic;
 }
 
-.about {
-    width: 50%;
+.label {
+    color: rgb(31, 62, 142);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
 }
 
-.embed-container {
-    text-align: center;
-    padding: 3rem;
-    position: relative; 
+.bottomnav {
+    display: inline;
+    padding: 0 2rem 0 0;
 }
+
+.social li {
+    font-size: .75rem;
+    display: inline;
+    padding: 0 2rem 0 0;
+}
+
+.up-space{
+    padding-top: 0rem;
+}
+
 .embed-container iframe {  
-    height: 400px;
-    width: 600px;
+    height: 230px;
+    width: 340px;
 }
-
-.left {
-    float: left;
-    margin: 1rem 0;
-}
-
-.right {
-    float: right;
-    margin: 1rem 0rem 1rem 3rem;
-}
-
-.copyright {
-    padding-top: 3rem;
-}
-
-footer {
-    margin: 3rem 0 0 0;
-}
-
 /*===== Responsive ===== */
-@media screen and (max-width: 600px) {
 
+@media (min-width: 800px) {
     body {
-        background-color: rgba(58, 62, 63, .03);
-        color: rgba(58, 62, 63, 1);
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    section {
-        padding: 1rem;
-    }
-
-    .section {
-        max-width: 100%;
-        text-align: left;
-        margin: 0 auto;  
-    }
-
-    .grid-home {
-        grid-template-columns: none;
-        grid-gap: 0rem;
-        padding: 10rem 1rem 1rem 1rem;    
-    }
-
-    .grid-page, .grid-illo {
-        grid-gap: 0rem;
-        padding: 1rem;
-    }
-
-    .demo {
-        max-width: 400px;
-    }
-
-    .about {
-        width: 100%;
-    }
-
-    .left, .right {
-        text-align: center;
         margin: 0;
     }
 
-    #space {
-        margin: 2rem;
+    footer {
+        text-align: left;
     }
 
-    .social {
-    padding: 1rem;
-    float: none;
+    .bottomnav {
+        display: block;
+        padding: 0 2rem 0 0;
     }
 
-    .social li {
-        display: inline;
-        padding: .25rem;
+    .image {
+        background-size: cover;
+        height: 25rem;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 3rem auto;
+    } 
+
+    .image2 {
+        background-size: cover;
+        height: 42rem;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 3rem auto;
+    }    
+
+    .image3 {
+        background-size: cover;
+        height: 72rem;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 3rem auto;
+    }    
+
+    .page-title {
+        margin: 5rem 0 2rem 0;
+    } 
+
+    .contain, .grid, .mountains {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 2rem 4rem;
+        max-width: 800px;
+        margin: 2rem auto;
+    }   
+
+    .up-space{
+        padding-top: 1rem;
+    }
+
+    .embed-container {
         text-align: center;
+        padding: 3rem;
+        position: relative; 
+    }
+    
+    .embed-container iframe {  
+        height: 400px;
+        width: 600px;
+    }
+
+    .border {
+        width: 100%;
+        border-top: 1.5rem solid #2b51b5;
+        border-bottom: 1.5rem solid #101e42;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-position: 0 0, 100% 0;
+        background-repeat: no-repeat;
+        -webkit-background-size: 1.5rem 100%;
+        -moz-background-size: 1.5rem 100%;
+        background-size: 1.5rem 100%;
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+        background-image: -webkit-linear-gradient(top, #2b51b5 0%, #101e42 100%), -webkit-linear-gradient(top, #2b51b5 0%, #101e42 100%);
+        background-image: -moz-linear-gradient(top, #2b51b5 0%, #101e42 100%), -moz-linear-gradient(top, #2b51b5 0%, #101e42 100%);
+        background-image: -o-linear-gradient(top, #2b51b5 0%, #101e42 100%), -o-linear-gradient(top, #2b51b5 0%, #101e42 100%);
+        background-image: linear-gradient(to bottom, #2b51b5 0%, #101e42 100%), linear-gradient(to bottom, #2b51b5 0%, #101e42 100%);
+        padding: 2rem 4rem;
+    }
+
+    .mountains {
+        background-size: cover;
+        height: 15rem;
+        display: block;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url("../images/mountains.svg");
+        background-position: center;
+        margin: 3rem auto;
     }
 }
-
 
