@@ -1,7 +1,7 @@
 /*===== Trent Lutmer - Designer ===== */
-/*===== Version 8.1.1 ===== */
+/*===== Version 8.1.2 ===== */
 /*===== 2018 Copyright of Trent Lutmer. All rights reserved. ===== */
-/*===== Last updated: 8 Aug 2018 ===== */
+/*===== Last updated: 12 Sep 2018 ===== */
 
 * {
     box-sizing: border-box;
@@ -70,7 +70,7 @@ a:hover {
    color: rgba(8, 15, 31, .5);
 }
 
-/*===== rgb(31, 62, 142) ===== */
+/*===== Grid ===== */
 
 .contain, .grid-2 {
     max-width: 800px;
@@ -175,6 +175,57 @@ a:hover {
     width: 340px;
 }
 
+/*===== Tooltip Image Hover ===== */
+
+.center {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.has-tooltip:hover + .tooltip,
+.has-tooltip:focus + .tooltip,
+.has-tooltip.hover + .tooltip {   
+    opacity: 1;
+    transform: translate(-0%, -80%) scale(1) rotate(0deg);
+}
+.tooltip {
+    display: block;
+    position: absolute;
+    transform: translate(0%, -50%) scale(0.75) ;
+    transform-origin: bottom center;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    opacity: 0;
+    width: 90%;
+    max-width: 1000vw;
+    z-index: 5;
+}
+    .tooltip:hover {
+        opacity: 1;
+        transform: translate(0%, -80%) scale(1) rotate(0deg);
+        pointer-events: inherit;
+    }
+    .tooltip img {
+        max-width: 400px;
+    }
+
+    .tooltip :after{
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(0%, 80%);
+    }
+
+
 /*===== Responsive ===== */
 
 @media (min-width: 800px) {
@@ -184,6 +235,57 @@ a:hover {
 
     footer {
         text-align: left;
+    }
+
+    .center {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .has-tooltip:hover + .tooltip,
+    .has-tooltip:focus + .tooltip,
+    .has-tooltip.hover + .tooltip {   
+        opacity: 1;
+        transform: translate(-0%, -80%) scale(1) rotate(0deg);
+    }
+
+    .tooltip {
+        display: block;
+        position: absolute;
+        transform: translate(0%, -80%) scale(0.75);
+        transform-origin: bottom center;
+        text-align: center;
+        transition: 0.15s ease-in-out;
+        opacity: 0;
+        width: 55%;
+        max-width: 1000vw;
+        pointer-events: none;
+        z-index: 5;
+    }
+
+    .tooltip:hover {
+        opacity: 1;
+        transform: translate(0%, -80%) scale(1) rotate(0deg);
+    }
+
+    .tooltip img {
+        max-width: 400px;
+    }
+
+    .tooltip :after{
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(0%, 80%);
     }
 
     .bottomnav {
