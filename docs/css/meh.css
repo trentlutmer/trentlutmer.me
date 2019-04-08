@@ -243,6 +243,7 @@
     }
 
     .pop {
+        max-width: 840px;
     }
 
     .image:hover {
