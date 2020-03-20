@@ -34,10 +34,12 @@ h1, h2, h3 {
 
 .header-primary {
 	margin: 0;
+	padding: 1.5em;
 }
 
 .main-footer{
 	margin: 3em 0 0;
+	padding: 1.5em;
 }
 
 .header-nav-list,.footer-nav-list {
