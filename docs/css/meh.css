@@ -1,0 +1,267 @@
+/*===== Trent Lutmer - Designer ===== */
+/*===== Version 10.1.2 ===== */
+/*===== 2020 Copyright of Trent Lutmer. All rights reserved. ===== */
+/*===== Last updated: 4 Apr 2020 ===== */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0 auto;
+        font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+        background-color: rgb(255, 245, 245, 1);
+        color: rgba(8, 15, 31, 1);
+    }
+
+    /*===== Paragraph and Typography ===== */
+   
+    h1, h3, p {
+        margin: 0;
+    }
+
+    h1 {
+        line-height: 4rem;
+        padding-top: 1rem;
+        font-weight: 700;
+    }
+
+    h3 { 
+        padding-top: 3rem;
+    }
+
+    p {
+        max-width: 600px;
+        line-height: 1.5;
+        padding-bottom: 1rem;        
+    }
+
+    ul {
+        max-width: 600px;
+        display: inline;
+        margin: 0;
+        padding: 0 1rem 0 0;
+        line-height: 1.5;
+    }
+
+    .slide {
+        padding-left: 1rem;
+    }
+
+    li {
+        display: inline;
+    }
+
+    .bulletlist{
+        display: list-item;
+    }
+
+    a {
+        color: rgba(8, 15, 31, 1);
+        text-decoration: none;
+    }
+
+    a:hover {
+       color: rgba(8, 15, 31, .5);
+    }
+
+    .project {
+        padding-bottom: 3rem;
+    }
+
+    .caption {
+        position: absolute;
+        padding: 1rem;
+        background-color: rgba(8, 15, 31, 0.6);
+        margin: 0;
+        color:rgb(255, 245, 245, 1);
+    }
+
+    .nav li{
+        padding-left: 3rem;
+    }
+
+    footer {
+        padding: 6rem 0;
+    }
+
+    footer ul li{        
+        padding-right: 3rem;
+    }
+
+    /*===== Grid ===== */
+  
+    .grid-1, .grid-2 {
+        margin: 1rem;
+    }
+    
+    .grid-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 1rem 4rem;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 2rem 4rem;
+    }
+
+    .bio {
+        padding: 5rem 0;
+    }
+
+    .image {
+        background-size: cover;
+        display: block;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 3rem;
+    }
+
+    .pop {
+        max-width: 55%;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .next {
+        height: 8rem;
+    }
+
+    nav {
+        max-width: 800px;
+        padding: 3rem 0;        
+    }
+
+    .nav {
+        float: right;
+    }
+
+    .masthead {
+        padding-bottom: 2rem;
+    }
+
+    .page-title {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .page-title h2 {
+
+        padding: 0;
+        font-weight: 400;
+    }
+
+    .bottomnav {
+        display: inline;
+        padding: 0 2rem 0 0;
+    }
+
+    .contact li {
+        padding: 0 3rem 0 0;
+    }
+
+    .up-space{
+        padding-top: 0rem;
+    }
+
+/*===== Large Screens Responsive ===== */
+
+@media (min-width: 800px) {
+
+    .grid-1, .grid-2 {
+        max-width: 800px;
+        margin: 1rem auto;
+    }
+    
+    .grid-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 1rem 4rem;
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 0;
+        text-align: left;
+    }
+
+    footer {
+        text-align: left;
+        padding: 6rem 0;
+    }
+    
+    h1, h3, p {
+        margin: 0;
+    }
+
+    h1 {
+        line-height: 4rem;
+        padding-top: 1rem;
+        font-weight: 700;
+    }
+
+    h3 { 
+        padding-top: 3rem;
+    }
+
+    p {
+        max-width: 600px;
+        line-height: 1.5;
+        padding-bottom: 1rem;
+    }
+
+    ul {
+        max-width: 600px;
+        display: inline;
+        margin: 0;
+        padding: 0 1rem 0 0;
+        line-height: 1.5;
+    }
+
+    .slide {
+        padding-left: 1rem;
+    }
+
+    .bulletlist{
+        display: list-item;
+    }
+
+    .nav {
+        text-align: left;
+    }
+
+    .masthead {
+        padding: 10rem 0;
+    }
+
+    .project {
+        padding-bottom: 5rem;
+    }
+ 
+    .caption {
+        position: absolute;
+        padding: 1rem;
+        background-color: rgba(8, 15, 31, 0.6);
+        margin: 0;
+        color:rgb(255, 245, 245, 1);
+    }
+
+    .image {
+        background-size: cover;
+        max-width: 100%;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 3rem;
+    } 
+
+    .page-title {
+        padding: 2rem 0 2rem 0;
+    }
+}
