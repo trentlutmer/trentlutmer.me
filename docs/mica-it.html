@@ -3,18 +3,17 @@
         <head>
             <!-- Primary -->
             <meta charset="utf-8">
-            <title>Trent Lutmer — Insight Timer </title>
-            <meta name="description" content='I'm Trent, a product designer living in Denver, Colorado.'>
-            <meta name="author" content="Trent Lutmer">
+            <title>Trent Lutmer</title>
+            
+            <!-- Media -->
+            <meta name="keywords" content="trent lutmer, product design, ux, ui, denver, developer, ibm">
+            <meta name="description" content="Hi! I'm Trent an adopted Korean-American designer living in Denver, Colorado. and I'm a designer at Figma.">
+            <meta name="author" content="Trent Lutmer">        
+            <meta property="og:title" content="Trent Lutmer, Designer" />
+            <meta property="og:description" content="Hi! I'm Trent an adopted Korean-American designer living in Denver, Colorado. and I'm a designer at Figma.">
+
             <!-- Mobile -->
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-
-            <!-- Media -->
-            <meta property="og:description" content="portfolio"/>
-            <meta property="og:site_name" content="Trent Lutmer - Designer">
-            <meta property="og:title" content="Trent Lutmer - Designer"/>
-            <meta property="og:type" content="website"/>
-            <meta property="og:url" content="www.trentlutmer.me"/>
 
             <!-- CSS -->
             <link rel="stylesheet" type="text/css" href="css/meh.css">
@@ -23,82 +22,144 @@
             <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
             <!-- Favicon -->
-            <link rel="icon" href="images/misc/favicon.ico" type="image/x-icon"/>
-            <link rel="shortcut icon" href="images/misc/favicon.ico" type="image/x-icon"/>
+            <link rel="icon" href="images/misc/favicon.png" type="image/x-icon"/>
+            <link rel="shortcut icon" href="images/misc/favicon.png" type="image/x-icon"/>
+            
+            <!-- Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16053424-1"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-16053424-1');
+            </script>
         </head>
         <body>
-        <div class="grid-1">
+        <div class="grid-full">
             <nav>
                 <a href="index.html">Trent Lutmer</a>
                 <ul class="nav">
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="https://www.dropbox.com/s/uykxiq6f7cl1h0z/trentlutmer-r%C3%A9sum%C3%A9.pdf?dl=0" title="Résumé">Résumé</a></li>
+                    <li><a href="otherwork.html">Other Work</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
                 </ul>
             </nav>
+            <header class="grid-content">
+                <h1>Insight Timer</h1>
+                <p class="caption">MICA, 2020 <br> Building a Platform of Mindfulness</p>
+            </header>
         </div>
-        <div class="grid-1">
-            <div class="bio">
-            <p><h1>Insight Timer</h1>MICA, 2020</p>
-            <p>Building a Platform of Mindfulness; Designing an education application that runs on worldwide expertise.</p>
+        <div class="grid-full">            
+            <div class="grid-content">
+                <h2>Overview</h2>
+                <p>In high-stress times, shortness of breath can result in panic attacks or seizures. With COVID-19 fueling stress and anxiety, composure and patience are vital. Today mental health and healthcare are hot issues, and many can't afford medication or therapy. As technology advances, we must present affordable and accessible healthcare solutions. For people who struggle with panic attacks, meditation is a low-cost choice to prevent symptoms from escalating.</p>
+                <p>*Note: This project is part of my graduate program. The information in this case study is my own and does not reflect the views of Insight Timer.</p>
             </div>
-            <img class="image" src="images/it/011_insighttimer.gif">
-            <h3>Overview</h3>
-            <p>Insight Timer is a health platform bringing teachers together to help people seek transcendence.</p>
-            <p>Insight Timer has 10 million meditators and 5,000 professional teachers. It allows people to discover and enjoy the largest library of guided meditations. Teachers can record, upload, and share their philosophies around the world. In 2016 it was part of Time magazine's list of 50 best apps.</p>         
-            <img class="image" src="images/it/001_insighttimer.jpg">
-            <h3>Role & Responsibilities</h3>
-            <p>As part of my graduate program, my assignment was to research and redesign Insight Timer. Throughout, I mapped workflows, built prototypes, and validated them with real users.</p>
-            <h3>Problem Statement</h3>
-            <p>In high-stress times, shortness of breath can result in panic attacks or seizures. With COVID-19 fueling stress and anxiety, composure and patience are vital. Today mental health and healthcare are hot issues, and many can't afford medication or therapy. As technology advances, we must present affordable and accessible healthcare solutions. For people who struggle with panic attacks, meditation is a low-cost choice to prevent symptoms escalating. </p>
-            <img class="image" src="images/it/010_insighttimer.jpg">
-            <p>I focused my efforts on a single problem statement: <br><br>"Fynn, a career-focused meditator, needs to feel accountable and motivated without leaving his comfort zone to spend more time with his friends."</p>
-
-            <h3>Audience & Users</h3>
-            <p>Early on, it was imperative to recognize the diverse factors that impact the Meditator and Guide experience. I began my research by reaching out and speaking to 15 Meditators and Guides (trained experts). We discussed their stories, motivations, and pain points as they meditate.</p>
-            <p>I distilled this information into two audience types; guides and listeners, and four personas.</p>
-            <ul class="slide">
-                <li class="bulletlist">A guide is a trained practitioner or teacher who understands mindfulness. A guide looks to reduce stress, anxiety, and depression for those seeking transcendence.</li>
-                <li class="bulletlist">A meditator or listener is a person looking to improve their mental well-being. A listener aspires to enhance their mental and emotional health.</li>
-            </ul>
-            <img class="image" src="images/it/002_insighttimer.jpg">
-            <h3>Scope & Constraints</h3>
-            <p>The class at this stage was two months long and meant that education and plans were fast-tracked. There were no discussions with product management, development, milestones, or sprints. The aggressive deadline involved expediting the process and limiting the scope.</p>
-            <h3>The Process</h3>
-            <p>I started my process by asking myself two questions:</p>
-            <ul class="slide">
-                <li class="bulletlist">What's the perfect meditation?</li>
-                <li class="bulletlist">What primary conditions need attention?</li>
-            </ul>
-            <p>Looking back, I worked backward from the meditator's desired thoughts, feelings, and actions. After creating a Sprint Map, Jobs-To-Be-Done Map, wireframes, I settled on two new features:</p>
-            <img class="image" src="images/it/003_insighttimer.jpg">
-            <img class="image" src="images/it/004_insighttimer.jpg">
-            <img class="image" src="images/it/005_insighttimer.jpg">
-            <p>Today is a set of curated content for the listener. It's based on the time of day, mood, and past meditations to help stay motivated. The feature presents opportunities to learn from various teachers and skill sets. With machine learning capabilities, listeners can discover new categories to keep them motivated.</p>
-            <img class="image" src="images/it/008_insighttimer.gif">
-            <p>Stats features a variety of information to hold listeners accountable as they progress. With the data, they can see their journey, reflect on their progress, and make adjustments. Over time, 'Today' updates with fresh content to keep them motivated.</p>
-            <img class="image" src="images/it/009_insighttimer.gif">
-            <p>Both ideas materialized, and I put a test plan to confirm my assumptions.</p>
-            <h3>The Process</h3>
-            <p>Testing Today and Stats with five participants revealed: </p>
-            <ul class="slide">
-                <li class="bulletlist">Meditators loved the streak card.</li>
-                <li class="bulletlist">Meditators did not understand Unlocked, New Session, and Favorite Session intended.</li>
-                <li class="bulletlist">Meditators wanted a more obvious Play action.</li>
-            </ul>
-            <p>The feedback validated most of the design goals I assumed. I did not expect the Play button confusion but conceded as I watched them struggle. Based on feedback, I updated the button placement and clarified the data on a splash screen. </p>
-            <img class="image" src="images/it/007_insighttimer.jpg">
-            <h3>Lesson Learned</h3>
-            <p>Adding more content doesn't increase retention but making it more personal can. By introducing AI and machine learning, meditators have intimate content to encourage motivation.</p>
-            <p>They always say 'Quality over quantity,' but in retrospect, I recognize my need for perfection can hinder my speed. With this course expedited, that approach became tested. After my usability tests, I realized the product success relies on its long-term usefulness and not it's short-term perfections.</p>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvYHMMCgOpFiRwgJqX3hUhM%2FMICA-InsightTimer%3Fnode-id%3D15%253A1040%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+            <img class="image-zoom" src="images/it/001_it.jpg">    
+            <div class="grid-content"> 
+                <h2>My Role</h2>
+                <p>This project took place between July and August 2020. As part of my graduate program, my assignment was to research and redesign Insight Timer. Throughout this course, I mapped workflows, built prototypes, and validated them with real users.</p>
+                <h2>The Challenge: Motivating the Listeners</h2>
+                <p>Insight Timer is a health platform bringing Listeners together to reduce anxiety, manage sleep, and improve happiness. Insight Timer has 10 million Listeners and 5,000 professional Guides. It allows people to discover and enjoy the free library of guided meditations. Guides can record, upload, and share their philosophies around the world.</p>
+            </div>
+            <img class="image-zoom" src="images/it/002_it.jpg">
+            <div class="grid-content">
+                <p>In the research, I discovered that Listeners on Insight Timer want to meditate consistently to build up a mindful outlook. Without new content, Listeners lose interest and try other apps. Insight Timer has over 55,000 free mediations, but users felt drowned by its surplus content, thus finding a session too tedious.</p>
+                <p>So, how might we surface intimate content to depressed Listeners?</p>
+            </div>
+            <img class="image-zoom" src="images/it/003_it.jpg">
+            <div class="grid-content">    
+                <h2>The Discovery Insights</h2>
+                <p>Early on, it was imperative to recognize the diverse factors that impact the Listener and Guide experience. I began my research by reaching out and speaking to 15 Listeners and Guides (trained experts). Our goals were to understand the challenges Listeners faced and the workarounds they applied. We discussed their stories, motivations, and pain points with meditation apps.</p>
+                <p>I distilled my insights into two audience types—Guides and Listeners—and four personas.</p>
+                <p>For this case study, I focused my efforts on Fynn. He is a career-focused Listener who needs to feel accountable and motivated without leaving his comfort zone to spend more time with his friends.</p>
+                <ul>
+                    <li class="bulletlist">A Listener is a person looking to improve their mental well-being. A Listener aspires to enhance their mental and emotional health.</li>
+                    <li class="bulletlist">Loves free content; Will pay for the premium tier if they believe they will consistently have new content.</li>
+                    <li class="bulletlist">Find improved overall mental health after meditating for a certain period.</li>
+                    <li class="bulletlist">Want straightforward ways to select content each time they meditate (‘Daily Meditation,’ courses, etc.).</li>
+                    <li class="bulletlist">Struggle with incorporating meditation consistently into their lives; find Like the social aspect of ‘streaks’/stats which holds them accountable.</li>
+                </ul>
+                <p><i>"We all live such busy lives it can be challenging to find time to meditate."</i></p>
+            </div>
+            <img class="image-zoom" src="images/it/004_it.jpg">
+            <div class="grid-content">
+                <h2>Ideating</h2>
+                <p>To align the research and Listener experience, I mapped "As-is' and 'To-be' scenarios into a basic story. In tandem, I made 'Lightning demos,' 'Jobs-to-be-done,' to understand my user's behaviors and motivations. After synthesizing the data, I began brainstorming ways to surface the recommended content. To inform my design strategy, I asked two questions:</p>
+                <ul>
+                    <li class="bulletlist">What's the perfect meditation?</li>
+                    <li class="bulletlist">What primary conditions need attention?</li>
+                </ul>
+                <p>This became the starting point for wireframing concepts and building a testable prototype.</p>
+            </div>
+            <img class="image-zoom" src="images/it/005_it.jpg">
+            <img class="image-zoom" src="images/it/006_it.jpg">
+            <div class="grid-content">
+                <h2>A More Focused Design</h2>
+                <p>Encouraged by the research, I began to brainstorm with a 'Crazy 8's' activity. Next, I explored ways to surface relevant content and hold them accountable during their journey. I selected the two best ideas, wireframed them, and combined them with the to-be stories. After two small iterations, I connected the mobile screens into a prototype.</p>
+            </div>
+            <img class="image-zoom" src="images/it/007_it.jpg">
+            <img class="image-zoom" src="images/it/008_it.jpg">
+            <div class="grid-content">
+                <p>'Today' is a set of curated content for the Listener. It's based on the time of day, mood, and past meditations to provide relevant content when users need it most. The feature presents opportunities to learn from various Guides and skill-sets. With machine learning capabilities, Listeners can discover new categories to keep them motivated. </p>
+            </div>            
+            <div class="grid-content">
+                <p>'Stats' features a variety of information to hold Listeners accountable as they progress. With the data, they can see their journey, reflect on their progress, and make adjustments. Over time, 'Today' updates with fresh content to keep them motivated.</p>
+            </div>
+            <img class="image-zoom" src="images/it/009_it.jpg">
+            <div class="grid-content">
+                <h2>Will It Work?</h2>
+                <p>Satisfied with the high-level experience, I began creating my test plan. The test's goal was to identify usability problems and determine the participant's satisfaction.</p>
+                <ul>
+                    <li class="bulletlist">Can Listeners navigate throughout Me, Today, and Search?</li>
+                    <li class="bulletlist">Can Listeners start a meditation session based on their current mood or time of day?</li>
+                </ul>
+                <p>I conducted five remote usability tests between August 7-13th, 2020. Each session lasted approximately 30-40 minutes. The participant's meditation experience ranged from less than six months to more than five years.</p>
+                <h2>Testing... testing...</h2>
+                <p>With COVID-19 looming, remote testing proved difficult but a great learning opportunity. Once internet connections settled, I had participants open the prototype and presented scenarios.</p>
+                <p><strong>Listener Task 1</strong>: It's 8am morning, and you received a push notification from Insight Timer. Seek a meditation session on 'Loving Kindness.'</p>
+                <p><strong>Listener Task 2</strong>: After your session completes, find your 'Stats.' How many consecutive days have you mediated?</p>
+            </div>
+            <img class="image-zoom" src="images/it/010_it.jpg">
+            <div class="grid-content">
+                <h2>Test Outcome and Ideas</h2>
+                <h3>Clarity</h3>
+                <p>80% of Listeners were confused about the information in 'Stats.' While everyone liked the idea, they need more clarity to determine its usefulness.</p>
+                <p><i>"...unsure of what 'Unlocked' and 'New Sessions' mean. What did I unlock?"</i></p>
+                <p>Ideas: Remove 'Favorite Session,' splash screen introducing feature, repeat streak card elsewhere. </p>
+                <h3>Relevancy</h3>
+                <p>100% of Listeners were satisfied with the 'Last Session' because they like to meditate to the same session. The cover images weren’t perfect but did help emphasize the type of session.</p>
+                <p><i>"This is great. I spent a lot of time searching for a session. I do the same session every day, and I have to navigate to find it.</i></p>
+                <p>Ideas: Incorporate machine learning and AI. Leverage searched items, past sessions, and reviews.</p>
+                <p>The usability tests yielded mixed results. While the consensus was positive, but confusion left the user's experience disparate. The most positive comment was around the need to build these new features today. The test was positive and clarified several questions and assumptions.</p>
+            </div>
+            <img class="image-zoom" src="images/it/011_it.jpg">
+            <div class="grid-content">
+                <h2>Next Steps</h2>
+                <p>After my test summary, I updated the prototype and mockups to adhere to the participants' recommendations and ideas.</p>
+                <ul>
+                    <li class="bulletlist">Clarify other features with a tutorial. Listeners didn't understand 'Unlocked,' 'New Sessions,' or 'Journey' content.</li>
+                    <li class="bulletlist">Change 'Daytime' and 'Nighttime' to 'Good Morning,' Good Evening.' Being greeted. The daytime/nighttime header is good but didn't feel inviting.</li>
+                    <li class="bulletlist">Update some images to relate to their session. Some of the photos didn't justify its content.</li>
+                    <li class="bulletlist">Add more metadata for the meditations. The upload process needs more data for Listeners, like Tradition and Audio type (No music or with music).</li>
+                </ul>
+            </div>
+            <img class="image-zoom" src="images/it/012_it.jpg">
+            <div class="grid-content">
+                <h2>Conclusion</h2>
+                <p>Insight Timer is an excellent solution. With its library of 55,000 free meditations, it's easy for anyone to find a session that best suits them. With a vast quantity of content, it's now time to provide users with more quality. Adding more content doesn't increase retention but making it more personal can. By introducing AI and machine learning, Listeners have intimate content to encourage motivation.</p>
+                <p>Listeners want a quick and relevant experience to their current mood and time of day. By surfacing intimate content for users, we can provide a more personalized experience -- like having a personal therapist. Giving them a more personal experience can help them feel accountable and accomplished toward reducing stress, anxiety, and happiness.</p>
+                <p>In these discussions, we heard stories about high levels of anxiety and panic attacks. With COVID, wildfires, racial injustice, and the upcoming 2020 election, it's hard to contain emotions. Mental Health and Healthcare are necessities, and many can't afford them. We, as humans, must find ways to make these necessities more accessible and affordable for all.</p>
+            </div>
+            <iframe style="border: 1px solid rgba(40, 39, 41, 1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvYHMMCgOpFiRwgJqX3hUhM%2FMICA-InsightTimer%3Fnode-id%3D15%253A1040%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+            <div class="grid-content">
+                <h2>Want more? Here are other case studies on Insight Timer from my cohort.</h2>
+                <p><a href="https://uxdesign.cc/the-mood-search-an-insight-timer-case-study-22b86899c1a2">The mood search: an Insight Timer case study by Mandie Byrne</a> </p>
+                <p><a href="https://medium.com/@dmurray02/bringing-user-consistency-to-insight-timer-c743d5966136">Bringing User Consistency to Insight Timer by David Murray</a> </p>
+                <p><a href="https://col10james.com/project/insight-timer">Insight Timer for Teachers: Content Creator Application by Colton Sturlaugson </a></p>
+            </div>               
         </div>
-        <footer class="grid-1">
-            <ul class="contact">
-                <li><a href="https://www.twitter.com/trentlutmer" title="Twitter">Twitter</a></li>
-                <li><a href="https://www.instagram.com/trentlutmer" title="Instagram">Instagram</a></li>
-                <li><a href="mailto:trent.lutmer@gmail.com" title="Email">Email</a></li>
-            </ul>
-            <p>© 2020 Trent Lutmer, All Rights Reserved.</p>
+        <footer class="grid-full">
+            <p>© 2021 Trent Lutmer, All Rights Reserved.</p>
         </footer>
     </body>
 </html>
