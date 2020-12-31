@@ -83,11 +83,11 @@
     }
 
     .nav li{
-        padding-left: 1rem;
+        padding-left: .5rem;
     }
 
     .hero {
-        text-align:left;
+        text-align: left;
     }
 
     footer {
