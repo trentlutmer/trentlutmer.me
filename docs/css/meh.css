@@ -54,7 +54,6 @@
     ul {
         max-width: 600px;
         display: inline;
-        margin: 0 1rem;
         line-height: 1.5;
     }
 
@@ -125,7 +124,7 @@
 
     .image-gif {
         max-width: 420px;
-        max-height: 360px;
+        max-height: 320px;
     }
 
     nav {
@@ -206,7 +205,6 @@
     ul {
         display: inline;
         padding: 0;
-        margin: 0 1rem;
     }
     
     .image-border:hover {
