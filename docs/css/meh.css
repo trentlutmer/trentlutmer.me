@@ -127,6 +127,12 @@
         max-height: 320px;
     }
 
+    #timbre-gif {
+        margin: 0 auto;
+        min-width: 400px;
+        min-height: 720px;
+    }
+
     nav {
         padding: 2rem 0;        
     }
