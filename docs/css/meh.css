@@ -145,8 +145,13 @@
     }
 
     .nav {
-        display: inline-grid;
+        display: inline-flex;
         float: right;
+        margin: 0;
+    }
+
+    .nav li {
+        padding: 0 .5rem;
     }
 
 /*===== Large Screens Responsive ===== */
@@ -226,8 +231,12 @@
 
     .nav {
         text-align: left;  
-        display: inline-grid;
-        margin: 0;   
+        display: inline-flex;
+        margin: 0; 
+    }
+
+    .nav li {
+        padding: 0 .5rem;
     }
 
     .project {
